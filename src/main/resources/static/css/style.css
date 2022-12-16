@@ -1,0 +1,312 @@
+/*COLOR CODES
+Dark Green: #101D13
+Beige : #D8C5B7
+
+*/
+body {
+
+    font-family: Century Gothic, Verdana, SansSerif;
+}
+
+a {
+    text-decoration: unset;
+}
+
+
+/*HOME PAGE*******************************************************************************************************/
+/*TOP NAV*/
+
+.topCon{
+    width: 100%;
+    height: 60px;
+    background-color: #101D13;
+}
+
+.iconCon{
+    float: left;
+    margin-top: 15px;
+    margin-right: 35px;
+    text-align: center;
+}
+
+#icon{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+
+.logoCon{
+    float: left;
+    margin-right:950px;
+}
+
+#logoImage{
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.iconLink:link, .iconLink:hover, .iconLink:visited, .iconLink:active {
+    color: white;
+
+}
+.balancei{
+    color: white;
+}
+
+/*WEBSITE IMAGE SECTION*/
+
+.bannerCon{
+    height: 600px;
+    border: 3px solid black;
+}
+.bannerImgCon{
+    width: 600px;
+    float: left;
+}
+
+.bannerHeadingCon{
+    float: left;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 90px;
+
+}
+
+.bannerHeading{
+    font-size: 85px;
+}
+
+
+/* PRODUCT LINKS*/
+
+.productLinkCon{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    margin-top: 30px;
+    border: black;
+}
+
+.imageCon{
+    float: left;
+    margin-left: 80px;
+}
+
+.linkImage{
+    border-radius: 50%;
+
+}
+
+.productLink:link, .productLink:hover, .productLink:active, .productLink:visited{
+    color:black;
+    text-decoration: unset;
+    font-size: 20px;
+}
+
+
+
+
+/**************************************PRODUCTS**********************/
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #101D13;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #101D13;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+
+
+
+/************************PLIST*****************************************/
+
+
+
+#pHead{
+    text-align: center;
+    font-size: 90px;
+
+
+
+}
+
+#pHeadCon{
+    width: 100%;
+    background-color: #D8C5B7;
+    display:inline-block;
+   overflow: hidden;
+
+}
+.productCon{
+    width:100px;
+}
+
+#productsTable{
+   width:100%
+}
+
+table,th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+#cartButton{
+    font-size: 25px;
+    color:white;
+    background-color: black;
+}
+
+.productInfo{
+    text-align: center;
+}
+
+
+/*********************************************************LOGIN***********************/
+
+#logInBox{
+    width: 600px;
+    height: 600px;
+    border: 8px solid #D8C5B7;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#logInBody{
+    background-color: #101D13;
+}
+
+#logInBox{
+    background-color: white;
+}
+
+#inputBox, #inputBox2{
+    width: 400px;
+    margin-left: 15%;
+    margin-bottom: 25px;
+}
+
+#logHeadCon{
+    margin-top: 15%;
+}
+
+#bck:link, .bck:hover, .bck:active, .bck:visited {
+    color:black;
+}
+
+/***************************************************HOME*****************************************/
+.top{
+    background-color: #101D13;
+    height: 120px;
+}
+
+#topI{
+    margin-top: 50px;
+}
+
+.indexLink:link, .indexLink:hover, .indexLink:active, .indexLink:visited {
+    color:black;
+}
+
+/**********************************REGISTER INMATE******************************************/
+
+#regForm{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid #D8C5B7;
+    background-color: white;
+    height:600px;
+    text-align: center;
+    width: 700px;
+}
+
+#regBody{
+    background-color: #101D13;
+}
+
+#btnreg{
+    margin-top: 40px;
+    background-color: #D8C5B7;
+    border: 1px solid black;
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inmate Canteen Services: Home</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+
+<div class="topCon">
+  <div class="logoCon">
+    <img id="logoImage" src="/images/ics_logo.png" height="50px" width="60px">
+  </div>
+
+  <div class="iconCon" id="pLinkCon">
+    <a class="iconLink" href="">My Profile</a>
+  </div>
+
+  <div class="iconCon" id="blinkCon">
+    <span class="balancei" th:utext="${'&#36;'+'&nbsp;'}" ></span></b><span class="balancei" th:text="${account.balance}"></span>
+  </div>
+
+  <div class="iconCon" id="cLinkCon">
+    <a class="iconLink" href="" >Cart</a>
+  </div>
+
+  <div class="iconCon" id="lLinkCon">
+    <a class="iconLink" href="/logout" >Logout</a>
+  </div>
+
+
+</div>
+
+<div class="bannerCon">
+
+  <div class="bannerImgCon">
+    <img src="/images/banner.jpg" height="600px" width="600px">
+  </div>
+
+  <div class="bannerHeadingCon">
+    <h1 class="bannerHeading">Inmate</h1>
+    <h1 class="bannerHeading">Canteen Service</h1>
+  </div>
+</div>
+<!--End of Banner Con-->
+
+<div class="productLinkCon">
+
+  <div class="imageCon">
+    <img class="linkImage" src="/images/hygiene.jpg" height="200px" width="200px">
+    <br>
+    <a class="productLink" href="">Hygiene</a>
+  </div>
+
+  <div class="imageCon">
+    <img class="linkImage" src="/images/foods.jpg" height="200px" width="200px">
+    <br>
+    <a class="productLink" href="">Grocery</a>
+  </div>
+
+  <div class="imageCon">
+    <img class="linkImage" src="/images/sweets.jpg" height="200px" width="200px">
+    <br>
+    <a class="productLink" href="">Sweets</a>
+  </div>
+
+  <div class="imageCon">
+    <img class="linkImage" src="/images/accessories.jpg" height="200px" width="200px">
+    <br>
+    <a class="productLink" href="">Accessories</a>
+  </div>
+
+  <div class="imageCon">
+    <img class="linkImage" src="/images/shoppingbag.png" height="200px" width="200px">
+    <br>
+    <a class="productLink" href="/products">All Products</a>
+  </div>
+
+</div>
+
+</body>
+</html>

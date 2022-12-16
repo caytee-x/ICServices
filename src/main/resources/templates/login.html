@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body id="logInBody">
+
+<div id="logInBox">
+    <form th:action="@{/submit_login}" th:object="${user}"
+          method="post">
+
+        <div id="logHeadCon">
+            <img id="logoImage" src="/images/ics_logo.png" height="50px" width="50px">
+  <h2 id="logInHeading">LOGIN</h2>
+        </div>
+        <div id="logInfoCon">
+  <p id="logInInfo">Please enter your credentials to login.</p>
+        </div>
+        <div id="formsec">
+        <input type="text" th:field="*{fps}" placeholder="Enter FPS#" id="inputBox" name="fps" class="form-control" maxlength="8" required />
+        <input type="text" th:field="*{password}" placeholder="Enter password" id="inputBox2" name="password" class="form-control"
+               required />
+        </div>
+  <button type="submit">LOGIN</button>
+
+        <div ><a id="bck" href="/index">Go Back</a></div>
+  </form>
+</div>
+
+</body>
+</html>

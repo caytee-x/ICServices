@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+
+<div class="topCon">
+  <div class="logoCon">
+    <img id="logoImage" src="/images/ics_logo.png" height="50px" width="60px">
+  </div>
+
+  <div class="iconCon" id="pLinkCon">
+    <a class="iconLink" href="">My Profile</a>
+  </div>
+
+  <div class="iconCon" id="blinkCon">
+    <span class="balancei" th:utext="${'&#36;'+'&nbsp;'}" ></span></b><span class="balancei" th:text="${account.balance}"></span>
+  </div>
+
+  <div class="iconCon" id="cLinkCon">
+    <a class="iconLink" href="" >Cart</a>
+  </div>
+
+  <div class="iconCon" id="lLinkCon">
+    <a class="iconLink" href="/logout" >Logout</a>
+  </div>
+
+</div>
+
+<div class="topnav">
+  <a class="active" href="#home">All</a>
+  <a href="#about">Grocery</a>
+  <a href="#contact">Sweets</a>
+  <a href="#contact">Hygiene</a>
+  <input type="text" placeholder="Search..">
+</div>
+
+<!----PRODUCTS---->
+<div class="productList">
+  <div id="pHeadCon">
+  <h3 id="pHead">All Products</h3>
+  </div>
+  </hr>
+
+  <div id="productsListCon">
+    <table id="productsTable">
+    <tr class="productCon" th:each="product: ${products}">
+      <form id="form">
+      <td class="productInfo" id="imgCon"> <img class="productImg" width="250" height="250" th:src="@{${product.img_path}}"> </td>
+        <td class="productInfo" id="productName">
+          <div><h3 th:text="${product.name}"/></div>
+          <div><p th:text="${product.description}"/></div>
+        </td>
+      <td class="productInfo" id="productPrice" >
+        <span  th:utext="${'&#36;'+'&nbsp;'}" ></span></b><span th:text="${product.unit_price}"></span>
+      </td>
+      <td class="productInfo"><button type="submit" id="cartButton">Add to Cart</button></td>
+      </form>
+      </tr>
+    </tr>
+    </table>
+
+  </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Sign Up - CodeJava</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body id="regBody">
+<div  id="regForm">
+    <div>
+        <h1>Register Inmate</h1>
+    </div>
+    <form id="regFormBody"  th:action="@{/register_inmate}" th:object="${user}"
+          method="post" style="max-width: 600px; margin: 0 auto;">
+        <div class="m-3">
+
+            <div class="form-group row">
+                <label class="col-4 col-form-label">FPS: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{fps}" class="form-control" maxlength="8" required />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4 col-form-label">First Name: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{first_name}" class="form-control" maxlength="30" required />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Last Name: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{last_name}" class="form-control"
+                            maxlength="30"/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Unit Number: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{unit_num}" class="form-control"
+                           required minlength="1" maxlength="2" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Cell Number: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{cell_num}" class="form-control"
+                           required minlength="1" maxlength="2" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Password: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{password}" class="form-control"
+                           required minlength="1" maxlength="14" />
+                </div>
+            </div>
+
+            <div>
+                <button id="btnreg" type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
